@@ -1,0 +1,22 @@
+package org.cts.test;
+
+public class Control {
+	
+	
+	
+public static void main(String[] args) {
+	
+	for (int i = 1; i <=5; i++) {
+		System.out.println(i);
+		for (int j = i; j <=5; j++) {
+			System.out.print(j);
+			
+		}
+		
+		
+		
+	}
+}
+	
+
+}

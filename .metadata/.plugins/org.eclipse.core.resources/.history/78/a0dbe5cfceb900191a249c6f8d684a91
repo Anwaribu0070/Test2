@@ -1,0 +1,22 @@
+package org.cts.test;
+
+public class NewOne {
+	
+	public  void cmpId() {
+		
+		System.out.println("1234");
+	}
+
+	public  void cmpName() {
+System.out.println("cts");
+	}
+	
+	public static void main(String[] args) {
+		
+		NewOne a=new NewOne();
+		
+		a.cmpId();
+		a.cmpName();
+		
+	}
+}
