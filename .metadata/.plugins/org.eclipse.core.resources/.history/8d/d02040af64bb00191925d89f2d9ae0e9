@@ -1,0 +1,39 @@
+package org.cts.test;
+
+
+//single Inheritance 
+public class new1 {
+	public  void empId() {
+		
+		System.out.println("12345678");
+
+	}
+	
+	public  void empName() {
+		System.out.println("anwar");
+
+	}
+	
+	public static void main(String[] args) {
+		
+		new1 obj = new new1();
+		obj.empId();
+		obj.empName();
+				
+	}
+	
+	
+	
+	
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+		
+		

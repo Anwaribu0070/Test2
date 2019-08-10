@@ -1,0 +1,43 @@
+package org.tcs.test.Newone;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+
+public class Base {
+	static WebDriver driver;
+	public static WebDriver  getDriverAccess() {
+		
+		System.setProperty("Webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\popz\\Newone\\drivers\\chromedriver.exe");
+		driver = new ChromeDriver();
+		return driver;
+	}
+		public static  void loadUrl(String url) {
+		driver.get(url);
+		}
+		
+		public static  void down(Select s, String value) {
+	    s.selectByValue(value);
+		}
+	    public static  void down1(Select s, String value) {
+		s.selectByVisibleText(value);
+	    }	
+		public static  void down2(Select s, int value) {
+        s.selectByIndex(value);
+		}			
+		
+			
+	public static  void is(Select s) {
+		s.isMultiple();
+		
+	}
+
+		}
+		
+		
+		
+	
+
+

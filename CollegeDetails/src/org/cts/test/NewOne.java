@@ -1,27 +1,22 @@
 package org.cts.test;
 
-public class NewOne {
+public interface  NewOne   {
 	
-	public  void cmpId() {
+	 void empId() ;
+	 
+	
+	  void empName(); 
 		
-		System.out.println("1234");
-	}
-
-	public  void cmpName() {
-System.out.println("cts");
-	}
-	public  void cmpAddress() {
-		System.out.println("chennai");
+	
 
 	}
 	
-	public static void main(String[] args) {
-		
-		NewOne a=new NewOne();
-		
-		a.cmpId();
-		a.cmpName();
-		a.cmpAddress();
-		
-	}
-}
+	
+	
+	
+	
+	
+	
+	
+	
+

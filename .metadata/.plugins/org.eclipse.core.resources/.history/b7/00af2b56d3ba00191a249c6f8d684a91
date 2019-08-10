@@ -1,0 +1,51 @@
+package org.tcs.test.Newone;
+
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class App 
+{
+	static WebDriver driver;
+	@BeforeClass
+	
+	public  static void launch() {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\popz\\Newone\\drivers\\chromedriver.exe");
+	     driver = new ChromeDriver();
+	    
+	    driver.get("https://www.amazon.in/");
+
+		driver.manage().window().maximize();
+
+	}
+	@Test 	
+	public  void logic() {
+	
+		WebElement findElement = driver.findElement(By.id("twotabsearchtextbox"));
+		findElement.sendKeys("iphonex");
+		
+		driver.findElement(By.xpath("(//input[@class='nav-input'])[1]")).click();
+		
+		WebElement findElement2 = driver.findElement(By.xpath("(//img[@class='s-image'])[1]"));
+		findElement2.click();
+		
+		driver.get("https://www.amazon.in/Apple-iPhone-XR-128GB-RED/dp/B07JHFK8R3/ref=sr_1_1_sspa?keywords=iphone+x&qid=1565375114&s=gateway&smid=A14CZOWI0VEHLG&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFRSEtPNlJSQ0pNRlYmZW5jcnlwdGVkSWQ9QTA3MDE0NDExMzlPRFBGVTdFRzNXJmVuY3J5cHRlZEFkSWQ9QTEwMTUzODUzMEFOSFJYTUU0Mk1QJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==");
+		
+		 WebElement findElement3 = driver.findElement(By.xpath("//span[text()='Add to Cart']"));
+		 findElement3.click();
+		 
+		
+		
+		
+		
+	
+		
+	}
+        
+    }
+

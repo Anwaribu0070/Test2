@@ -1,0 +1,22 @@
+package org.cts.test;
+
+public abstract class NewOne   {
+	
+	public abstract void empId() ;
+	 
+	
+	public  void empName() {
+		System.out.println("anwar");
+	}
+
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

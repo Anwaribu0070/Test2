@@ -14,9 +14,9 @@ public class NewDetails {
 	
 	public static void main(String[] args) {
 		
-		NewDetails n=new NewDetails();
-		n.empId();
-		n.empName();
+		String s = "1234kl";
+		int ps = Integer.parseInt(s);
+		System.out.println(ps);
 		
 		
 		

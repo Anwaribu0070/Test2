@@ -1,0 +1,17 @@
+package org.cts.test;
+
+public class noo extends NewOne{
+
+	@Override
+	public void empId() {
+		System.out.println("987654321");
+		
+	}
+	public static void main(String[] args) {
+		noo n= new noo();
+		n.empId();
+		n.empName();
+	}
+	
+	
+}

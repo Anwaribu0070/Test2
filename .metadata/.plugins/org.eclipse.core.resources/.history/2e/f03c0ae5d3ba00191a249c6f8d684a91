@@ -1,0 +1,43 @@
+package org.tcs.test.Newone;
+
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class App 
+{
+	static WebDriver driver;
+	@BeforeClass
+	
+	public  static void launch() {
+	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\ELCOT\\eclipse-workspace\\popz\\Newone\\drivers\\chromedriver.exe");
+	     driver = new ChromeDriver();
+	    
+	    driver.get("https://www.amazon.in/");
+
+		driver.manage().window().maximize();
+
+	}
+	@Test 	
+	public  void logi() {
+	
+		WebElement findElement = driver.findElement(By.id("twotabsearchtextbox"));
+		findElement.sendKeys("iphonex");
+		
+		driver.findElement(By.xpath("(//input[@class='nav-input'])[1]")).click();
+		
+		WebElement findElement2 = driver.findElement(By.xpath("(//img[@class='s-image'])[1]"));
+		findElement2.click();
+		
+		 WebElement findElement3 = driver.findElement(By.xpath("//span[text()='Add to Cart']"));
+		 driver.get("https://www.amazon.in/gp/huc/view.html?ie=UTF8&newItems=C8a7a9dcf-666a-498f-8fb3-8b2c930712eb%2C1");
+		 findElement3.click();
+		 }
+        
+    }
+

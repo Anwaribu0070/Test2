@@ -1,0 +1,19 @@
+package org.cts.test;
+
+public class NewOne extends new1  {
+
+	
+public  void cmpId() {
+	System.out.println("98765432");
+
+}
+public  void cmpName() {
+	
+	System.out.println("dlf");
+}
+
+	
+	
+}	
+	
+

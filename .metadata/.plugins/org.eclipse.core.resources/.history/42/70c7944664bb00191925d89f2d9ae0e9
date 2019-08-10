@@ -1,0 +1,45 @@
+package org.cts.test;
+
+import java.util.Scanner;
+
+public class new1 {
+	public static void main(String[] args) {
+		
+	
+		
+		Scanner sc= new Scanner(System.in);
+		
+		System.out.println("Enter the details ");
+		
+		
+	byte nb = sc.nextByte();
+	System.out.println(nb);
+     
+	short ns = sc.nextShort();
+		System.out.println(ns);
+		
+		int ni = sc.nextInt();
+		System.out.println(ni);
+		
+		long nl = sc.nextLong();
+		System.out.println(nl);
+		
+	String next = sc.next();
+		System.out.println(next);
+		
+		String nll = sc.nextLine();
+		System.out.println(nll);
+		
+	float nf = sc.nextFloat();
+		System.out.println(nf);
+		
+	double nd = sc.nextDouble();
+		System.out.println(nd);
+		
+		
+		boolean isEmployee =true;
+		System.out.println(isEmployee);
+	
+	}
+
+}

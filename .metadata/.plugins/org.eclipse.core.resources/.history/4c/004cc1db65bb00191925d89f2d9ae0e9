@@ -1,0 +1,25 @@
+package org.cts.test;
+
+public class noo extends NewOne{
+	
+	private void clintId() {
+		System.out.println("0000");
+	}
+
+	private void clintName() {
+		System.out.println("Greens");
+
+	}
+	public static void main(String[] args) {
+		
+		noo n= new noo();
+		
+		n.clintId();
+		n.clintName();
+		n.empId();
+		n.cmpName();
+		n.cmpId();
+		n.cmpName();
+		
+	}
+}

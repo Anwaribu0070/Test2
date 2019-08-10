@@ -1,0 +1,47 @@
+package org.cts.test;
+
+public class new1 {
+	public static void main(String[] args) {
+		
+		
+		//int 
+		// short 
+		// flaot 
+		// long 
+		// char 
+		//boolean
+		// String 
+		//byte
+		
+		
+		byte age=22;
+		System.out.println(age);
+     
+		short id=4321;
+		System.out.println(id);
+		
+		int regno=987654321;
+		System.out.println(regno);
+		
+		long phnno= 9876543210l;
+		System.out.println(phnno);
+		
+		String name="Anwar";
+		System.out.println(name);
+		
+		char initial ='A';
+		System.out.println(initial);
+		
+		float sal=56.6f;
+		System.out.println(sal);
+		
+		double avg=55;
+		System.out.println(avg);
+		
+		
+		boolean isEmployee =true;
+		System.out.println(isEmployee);
+	
+	}
+
+}
